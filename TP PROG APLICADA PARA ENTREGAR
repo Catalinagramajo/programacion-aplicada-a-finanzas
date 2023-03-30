@@ -1,0 +1,101 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Mar 20 13:29:01 2023
+
+@author: catalinagramajo
+"""
+
+class MyArray1:
+    #este metodo contiene la lista de elementos, las dimensiones de la matriz y el orden de navegacion
+    # el init nunca tiene return, unicamente modifica el objeto.
+    def __init__(self, elems, r, c, by_row = bool()): # son todos atributos de instancia de clase
+        self.elems = elems
+        self.r = r
+        self.c = c
+        self.by_row = by_row
+        
+    #toma las coordenadas j,k de la matriz y devuelve la posicion m asociada en elems
+    def get_pos(self, j, k):
+    # toma una posicion m en la lista y devuelve las coordenadas j,k como una tupla
+        p = k + (j-1)*self.c
+        return p
+
+    def get_coords(self,p):
+        k = int((p+1)-((len(self.elems)))
+        return k   
+    
+matriz = MyArray(3,2[1,2,3,4,5,6], True) 
+print (matriz.get_pos(7))
+print(matriz.get_coords(9)) 
+       
+            
+    # devuelve objeto con la misma matriz pero altera la lista elems y cambia el valor de verdad de by_row
+   
+    def switch(self):
+        aux = []
+    # dado un objeto, me devuelve otro. Altera la lista elems (en vez de barrer columna a columna, lo barre fila a fila). 
+    # en vez de leerlo por columnas, lo lee por filas.
+    for elementos in by_row():
+        if self.by_row == True:
+            self.get_pos
+            aux.append()
+        if self.by_row == False
+            self.get_coords
+            aux.append()
+        return aux
+        
+(A.switch()).switch() = A #valida que cuando hago switch, switch de un objeto, me tiene que dar el mismo objeto inicial, sin ser modificado.
+    # devuelven el contenido de la columna j, la k y el elemento (j,k) de la matriz
+    # variante 1: explicita, posicional --> INDICES
+    def get_row1(self, j):
+    def get_col1 (self, k):
+    def get_elem1 (self,(j,k)):
+    # devuelven objeto de clase siendo fila j y columna k eliminadas
+    # version 1: explicita, posicional
+    def del_row1(self, j):
+        self.elems = aux1
+    def del_col1 (self, k):
+        self.elems = aux2
+    # devuelve las filas (j,k) y columnas (l, m) intercambiadas
+    # version 1: explicita, barriendo elementos
+    def swap_rows1(self, j, k):
+        self.elems = 
+    def swap_cols1(self, l, k):
+        self.elems = 
+    # toman el objeto y devuelven otro del mismo tipo
+    # caso 1: con fila j multiplicada por el factor x 
+    # caso 2: con columna k multiplicada por y
+    # version 1: explicita
+    def scale_row1(self,j,x):
+    def scale_col1(self, k, y):
+    # operador que devuelve elemento de la clase con matriz transpuesta (intercambio filas por columnas)
+    def transpose(self):
+        
+(A.transpose()).transpose() = A  
+   # operador que devuelve copia del elemento de la clase reflejado en sus columnas y filas
+   # desplazar todas 1 posicion a la derecha, y la columna de la derecha va al principio.
+   #Y que el desplazamiento pueda ser upwards o downwards.
+    def flip_cols(self):
+    def flip_rows(self):
+   # devuelve el determinante de la matriz (si es cuadrada)
+   # primero chequear que la matriz sea cuadrada
+   # pensarlo recursivo
+    def det(self):
+        # para ver si la matriz es cudrada
+        if len(self.j) == len(self.k):
+            
+        else:
+            print ("No se puede calcular el determinante, pues la matriz debe ser cuadrada")
+        return det(x) = x
+            
+       #determinante = (i*(a*d - b*c) -j*(a*d - b*c) + k*(a*d - b*c)
+
+#mismo problema pero puedo usar una lista de listas
+# una lista de rows y una lista de columns
+elems = [1,2,3,4,5,6]
+class myarray2:
+    get_row1[1:j]
+    get_col1[1:k]
+    
+    return 

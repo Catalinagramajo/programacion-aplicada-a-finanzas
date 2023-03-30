@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Mar 12 12:30:43 2023
+
+@author: catalinagramajo
+"""
+#  format permite incluir en una cadena, texto ordinario y caracteres de formateo, 
+# que representan un tipo en particular de dato
+
+#def moverdisco (i, t):
+   # print("Mover el disco from {} to {}!. \n".format(i,t))
+    
+def hanoi(n, i, j, t):
+   if n == 0:
+       pass
+       #print ("Error, debe ingresar numeros iguales o mayores a 1")
+   else:
+       hanoi(n-1, i, t, j)
+       print(f"Mover el disco {n} from: {i} to: {t}")
+       hanoi(n-1, j, i, t)
+    
+hanoi(6, 1, 2, 3)
+
+# pandas es una libreria que tomo todas las funciones de excel y lo traspolo a python.
+# un diccionario es un json
+
+def hanoii(n, i, j, k):
+    if n == 1:
+        print(f"Move disc 1 from {i} to {j}")
+    else:
+        hanoii (n-1, i, j, k)
+        print(f"Move disc from {i} to {k}")
+        hanoii(n-1, k, j, i)
+hanoii(6, 1, 2, 3)       
+
+    
+#funcion fetch para listas cuando lamba es utilizada

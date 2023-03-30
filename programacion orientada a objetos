@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Mar 17 10:07:17 2023
+
+@author: catalinagramajo
+"""
+# el self es la instancia! # los parentesis son para inicializar algo
+# si le asigno un valor al argumento ==> es un **keywordarg
+# si ingreso un argumento y me falta definirlo ==> es un *args
+# args y keyword arg es un nombre arbitrario, pero LO MAS IMPORTANTE ES QUE UNO TIENE * Y OTRO **
+class Alumno:
+    def __init__(self, nombre, apellido): #init toma la instancia --> inicializa la instancia
+        self.nombre = nombre
+        self.apellido = apellido
+        self.email = nombre[0].lower() + apellido.lower() + "@udesa.edu.ar"
+
+alumno1 = Alumno("Catalina", "Gramajo")
+alumno2 = Alumno ("Fernando", "Herrera")
+
+print(alumno1.nombre)
+print(alumno1. apellido)
+print(alumno1.email)
+print(alumno2.nombre)
+print(alumno2. apellido)
+print(alumno2.email)
+#alumno1 = Alumno()
+#alumno2 = Alumno()
+#alumno1.nombre = "Fernando"
+#alumno1.apellido = "Krikun"
+#alumno1.email = fkrikun@udesa.edu.ar

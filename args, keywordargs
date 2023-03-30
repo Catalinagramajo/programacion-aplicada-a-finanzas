@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Mar 17 09:26:24 2023
+
+@author: catalinagramajo
+"""
+# todos los argumentos que no se que son, los pasa como args
+    
+def sum_all(*args):
+    if len(args) == 1:
+        return args[0]
+    else:
+        ans = args[0] + sum_all(*args[1:]) #*args para convertir el argumento (como q desarmo la tupla)
+        return ans
+
+print(sum_all(*[1,5])) # son dos formas distintas
+print (sum_all(1,5,7,8)) # de hacerlo
+
+
+def func(*args, **kwargs):
+    print(args)
+    print (kwargs)
+    
+print(func("as", nombre = "Cata", apellido = "Gramajo"))
+
+def saludar(primer_nombre, apellido, **kwargs):
+    print(f"Hola {primer_nombre} {apellido}")
+nombre = {
+    "primer_nombre": "Fernando", "apellido": "Kricun"
+}
+
+saludar(**nombre)
+saludar(primer_nombre = "Fernando", apellido = "Kricun")
+
+
+def saludar(apellido, *args, **kwargs):
+    print (kwargs)
+    print (args)
+    #print(f"Hola {primer_nombre} {apellido}")
+nombre = {
+    "primer_nombre": "Fernando", "apellido": "Kricun"
+}
+
+saludar(2, 3, 23, saludo = "Hola")

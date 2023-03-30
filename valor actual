@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Mar 12 19:57:12 2023
+
+@author: catalinagramajo
+"""
+
+def va (lista, i):
+    if len(lista) == 1:
+        return lista[0]
+    else:
+        x = lista[1] / (1+i)
+        nuevalista = (lista[1:]) #lista desde 1 hasta el final
+        return x + va(nuevalista, i)
+    
+lista = [100000, 100000, 1000000, 90000]
+i = 0.5
+valor = va(lista, i)
+print(valor)
+        
